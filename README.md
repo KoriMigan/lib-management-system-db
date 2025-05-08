@@ -106,7 +106,7 @@ The database incorporates best SQL practices including proper normalization, ref
 
 ## ERD Diagram
 
-👉 [Click here to view the ERD](assets\lib management db.drawio.png)
+👉 [Click here to view the ERD](./assets/lib management db.drawio.png)
 
 ## Additional Notes
 
