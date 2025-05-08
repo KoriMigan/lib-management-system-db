@@ -76,38 +76,6 @@ The database incorporates best SQL practices including proper normalization, ref
 
    You should see all tables listed.
 
-## Using the Database
-
-### Main Features
-
-1. **View available books:**
-   ```sql
-   SELECT * FROM available_books;
-   ```
-2. **View overdue loans:**
-   ```sql
-   SELECT * FROM overdue_loans;
-   ```
-3. **Add a new book with copies:**
-   ```sql
-   CALL AddBook('Book Title', '1234567890123', 2023, 'Publisher Name', 1, 1, 3, 19.99, @book_id);
-   SELECT @book_id;
-   ```
-4. **Register a new member:**
-   ```sql
-   CALL RegisterMember('First', 'Last', 'email@example.com', '555-1234', '123 Main St', '2000-01-01', 1, @member_id);
-   SELECT @member_id;
-   ```
-5. **Renew a book loan:**
-   ```sql
-   CALL RenewLoan(1, @success);
-   SELECT @success;
-   ```
-
-## ERD Diagram
-
-👉 [Click here to view the ERD](./assets/lib management db.drawio.png)
-
 ## Additional Notes
 
 * The database includes sample data for testing purposes
