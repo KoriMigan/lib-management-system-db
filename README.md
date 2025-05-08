@@ -37,10 +37,6 @@ The database incorporates best SQL practices including proper normalization, ref
 * Many-to-Many relationships between books and authors, books and genres
 * Complex relationships for loan processing between members, book copies, and staff
 
-## Entity Relationship Diagram (ERD)
-
-![Library Management System ERD](assets\lib management db.drawio.png)
-
 ## Setup Instructions
 
 ### Prerequisites
@@ -108,11 +104,13 @@ The database incorporates best SQL practices including proper normalization, ref
    SELECT @success;
    ```
 
+## ERD Diagram
+
+👉 [Click here to view the ERD](assets\lib management db.drawio.png)
+
 ## Additional Notes
 
 * The database includes sample data for testing purposes
 * Automatic daily checks for overdue books using MySQL event scheduler
 * Built-in triggers update book status when loans are created or returned
 * Comprehensive error handling in stored procedures
-
-![ERD Screenshot](https://your-image-link.com/erd.png)
